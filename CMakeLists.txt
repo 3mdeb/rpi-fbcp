@@ -4,6 +4,6 @@ SET(COMPILE_DEFINITIONS -Werror)
 
 add_executable(fbcp main.c)
 
-find_library(LIB_BCM_HOST bcm_host)
+find_library(LIB_VCHOSTIF vchostif)
 
-target_link_libraries(fbcp "${LIB_BCM_HOST}")
+target_link_libraries(fbcp "${LIB_VCHOSTIF}")
